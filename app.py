@@ -4,12 +4,19 @@
 from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 
+external_stylesheets = [
+    'https://fonts.googleapis.com/css2?family=Poppins&display=swap',
+     dbc.themes.FLATLY
+]
+
 #Launching the Application
-app = Dash(__name__)
+app = Dash(__name__, external_stylesheets=external_stylesheets)
+app.css.config.serve_locally = True
 
 #Main Layout
-app.layout = dbc.Container(html.P("My Dashboard"),
-                            fluid=True)
+app.layout = dbc.Container([html.Div(), html.Div()],
+                            fluid=True,
+                            className="dashboard-container")
 
 #Runnin the app with development server in debug mode
 if __name__ == "__main__":
