@@ -20,6 +20,7 @@ app.layout = dbc.Container([
                 html.Div([
                     html.H1([
                         html.Span("Welcome"),
+                        html.Br(),
                         html.Span("to the Dashboard Demo")
                     ]),
                     html.P("This is a demo in construction that will display trade data")
@@ -29,7 +30,13 @@ app.layout = dbc.Container([
                         "height": 260
                     }
                 ),
-                html.Div(),
+                html.Div([html.Div(style={'width': 206}),
+                          html.Div(style={'width': 104})],
+                        style={
+                            'margin-left': 15,
+                            'margin-right': 15,
+                            'display': 'flex'
+                        }),
                 html.Div(),
                 html.Div()
         ],
