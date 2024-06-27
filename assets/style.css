@@ -14,9 +14,17 @@ body {
     border-radius: 10px;
 }
 
+h1 {
+    font-family: "Poppins";
+    color: #ffffff;
+    font-size: 35px;
+    margin: 15px;
+}
+
 p {
     font-family: 'Poppins';
     color: #ffffff;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 16px;
+    margin-top: 15px;
+    text-align: justify;
 }
