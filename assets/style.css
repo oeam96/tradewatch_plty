@@ -28,3 +28,51 @@ p {
     margin-top: 15px;
     text-align: justify;
 }
+
+/* Radio-buttons */
+.form-check {
+    width: 100%;
+    height: 38px;
+    margin: 1px;
+    padding-left: 0;
+}
+
+.btn.btn-outline-light,
+.btn.btn-light {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    font-family: 'Poppins';
+    border-radius: 3px;
+}
+
+.btn.btn-outline-light {
+    border: 1px solid transparent;
+}
+
+.btn.btn-outline-light:hover {
+    color: #010103;
+    background-color: color-mix(in srgb, var(--bs-light), #010103 7%);
+}
+
+/* Single button */
+
+.btn.btn-info {
+    width: 100%;
+    height: 38px;
+    margin: 1px;
+    padding: 6px;
+    font-family: 'Poppins';
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.btn.btn-info:active,
+.btn.btn-info:focus {
+    background-color: var(--bs-info);
+}
+
+.btn.btn-info:hover {
+    background-color: color-mix(in srgb, var(--bs-info), #010103 7%);
+}

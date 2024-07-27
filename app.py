@@ -30,13 +30,33 @@ app.layout = dbc.Container([
                         "height": 260
                     }
                 ),
-                html.Div([html.Div(style={'width': 206}),
-                          html.Div(style={'width': 104})],
-                        style={
-                            'margin-left': 15,
-                            'margin-right': 15,
-                            'display': 'flex'
-                        }),
+                html.Div(
+                    [
+                        html.Div(dbc.RadioItems(
+                            className='btn-group',
+                            inputClassName='btn-check',
+                            labelClassName='btn btn-outline-light',
+                            labelCheckedClassName='btn btn-light',
+                            options=[
+                                {"label": "Graph", "value": 1},
+                                {"label": "Table", "value": 2}
+                            ],
+                            value = 1,
+                            style={'width': '100%'}
+                        ),
+                                 style={'width': 206}),
+                        html.Div(dbc.Button(
+                            "About",
+                            className="btn btn-info",
+                            n_clicks=0
+                        ),
+                                style={'width': 104})
+                    ],
+                    style={
+                        'margin-left': 15,
+                        'margin-right': 15,
+                        'display': 'flex'
+                    }),
                 html.Div(),
                 html.Div()
         ],
